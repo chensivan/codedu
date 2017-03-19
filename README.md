@@ -103,14 +103,14 @@ should review the section for developers at the end.*
 
 -   Open a terminal window and execute the following command.
 
-        $ apm install https://github.com/cromaLab/atom-codeon
+        $ apm install https://github.com/chensivan/codedu
 
 #### Setup the server
 
 Now you should either setup a local server to manage the requests or
 configure Codeon to connect with a remote server. You can find more
 information in setting up your local server in this
-[repository](https://github.com/cromaLab/codeon-server).
+[repository](https://github.com/chensivan/codeon-server).
 
 ### Troubleshooting
 

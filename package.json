@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A help request platform",
   "keywords": [],
-  "repository": "https://github.com/cromaLab/atom-codeon",
+  "repository": "https://github.com/chensivan/codedu",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
