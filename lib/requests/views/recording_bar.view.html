@@ -1,0 +1,18 @@
+<div ng-controller='RecordingBarController' id='recordingBar' class='codeon-recording-bar'>
+  &nbsp;&nbsp;&nbsp;
+  <div ng-hide='uploading' id='recordingSpan'>
+    <span class='h2_size in_red'> {{COUNTDOWN_NUMBER}}
+      ● Recording</span>
+    <img src="atom://atom-codeon/resources/ani_equalizer_white.gif" height='32'>
+    &nbsp;&nbsp;&nbsp;
+    <button type='button' class='h2_size btn btn_default icon icon-primitive-square settings' ng-click='doneRecording()'>Done</button>
+    <button type='button' class='h2_size btn btn_default icon icon-circle-slash settings' ng-click='cancelRecording()'>Cancel</button>
+  </div>
+  <div ng-show='uploading'>
+    <p style="font-size: 17px">
+      <img src="atom://atom-codeon/resources/request-uploading.gif" height=32>
+        Request Uploading ...
+      </img>
+    </p>
+  </div>
+</div>

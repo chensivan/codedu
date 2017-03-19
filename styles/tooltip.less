@@ -1,0 +1,227 @@
+@import "ui-variables";
+
+
+.add {
+ background-color: #a9ffbb;
+}
+.delete{
+ background-color: #ffbfbf;
+}
+//
+//
+// atom-text-editor::shadow .line {
+//   &.add {
+//     background-color: rgba(0,255,0,0.4);
+//   }
+//
+//   &.delete {
+//     background-color: rgba(255,0,0,0.4);
+//   }
+//
+//   &.nothingchanged {
+//     //background-color: rgba(0,0,0,0.2);
+//   }
+// }
+
+atom-text-editor::shadow .line-number {
+    &.request0{
+      background-color: #EC2525;
+    }
+
+    &.request1{
+      background-color:#4876FF;
+    }
+
+    &.request2{
+      background-color:#993F00;
+    }
+
+    &.request3{
+      background-color:#008000;
+    }
+
+    &.request4{
+      background-color:#FFA405;
+    }
+    &.request5{
+      background-color:#740AFF;
+    }
+    &.request6{
+      background-color:#E0FF66;
+    }
+
+
+    &:hover {
+     cursor: pointer;
+   }
+
+
+}
+
+
+.request-button {
+    margin-right: 0 !important;
+    height: 0; // Height is computed
+    // right: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+
+    transition: opacity 100ms, visibility 0 100ms;
+
+    backface-visibility: hidden;
+
+    div {
+      color:black;
+      padding: 14px;
+      font-size: 18px;
+      background-color: white;
+    }
+
+    &.is--open {
+      margin-right: 0 !important;
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+      transition: opacity 100ms;
+    }
+
+}
+
+.request-button .request-button-wrapper {
+
+ background-color: #444;
+ box-shadow: 0px 0px 5px 0px #222;
+ padding: 5px;
+ border-radius: 6px;
+
+ .requestbuttonclose {
+   height: 15px;
+   opacity: 0.5;
+   transition: opacity 100ms;
+   font-size: 17px;
+
+   &:hover {
+    opacity: 1;
+    cursor: pointer;
+   }
+   &::before, &::after {
+     position: absolute;
+     left: 6px;
+     height: 15px;
+     width: 3px;
+     background-color: #FFF;
+
+   }
+
+ }
+}
+
+
+//
+// atom-text-editor /deep/ .line.add{
+//  background-color: green;
+// }
+//
+// atom-text-editor /deep/ .line.remove{
+//  background-color: red;
+// }
+
+// atom-text-editor::shadow .lines .line.cursor-line {
+//   background-color: red;
+// }
+//
+// atom-text-editor::shadow .selection .region {
+//   background-color: LightGoldenRodYellow;
+// }
+
+
+
+.test-pkg .tooltip-wrapper {
+ background-color: #444;
+ box-shadow: 0px 0px 5px 0px #222;
+ padding: 5px;
+ border-radius: 6px;
+
+
+ .title {
+   display: inline-block;
+   height: 10px;
+   margin-right: 15px;
+ }
+
+ // http://codepen.io/brissmyr/pen/egidw/
+ .close {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   width: 15px;
+   height: 15px;
+   opacity: 2.3;
+   transition: opacity 100ms;
+
+   &:hover {
+    opacity: 1;
+   }
+   &::before, &::after {
+     position: absolute;
+     left: 6px;
+     content: ' ';
+     height: 15px;
+     width: 3px;
+     background-color: #FFF;
+   }
+   &::before {
+     transform: rotate(45deg);
+   }
+   &::after {
+     transform: rotate(-45deg);
+   }
+ }
+}
+
+
+
+.test-pkg {
+
+ height: 0; // Height is computed
+ // right: 0;
+ position: absolute;
+ visibility: hidden;
+ opacity: 0;
+ pointer-events: none;
+ user-select: none;
+ z-index: 100;
+
+ transition: opacity 100ms, visibility 0 100ms;
+
+ backface-visibility: hidden;
+ transform-style: preserve-3d;
+
+ div {
+   color:black;
+   padding: 14px;
+   font-size: 18px;
+   background-color: gray;
+ }
+
+ &.is--open {
+   visibility: visible;
+   opacity: 1;
+   pointer-events: all;
+  //  right: 0 !important;
+   transition: opacity 100ms;
+ }
+}
+
+atom-text-editor::shadow .highlight.test-pkg-highlight .region {
+ background-color: rgb(255,255,0);
+ border-style: solid;
+ border-width: 2px;
+}
+
+atom-text-editor::shadow .highlight.original .region {
+ background-color: rgb(40, 44, 52);
+}

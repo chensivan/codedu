@@ -1,0 +1,33 @@
+<div ng-controller='RequestPromptController' class='code-on-request-prompt'>
+  <form ng-submit='startRecording()' ng-hide='COUNTDOWN'>
+    <h2>Briefly name your request. (e.g. javascript event handler syntax)</h2>
+    <textarea ng-model='requestTitle' maxlength="200" id="request-title" class="form-control native-key-bindings" rows="2" tabIndex=-1 placeholder="(e.g. javascript event handler syntax)">{{requestTitle}}</textarea>
+    <span>{{200 - requestTitle.length}} left</span>
+
+    <h2 ng-show='TEXTMODE' style="color:red;">Please keep your request within 1 minute.</h2>
+    <br/>
+    <h2>Describe your request in the text box below. Click 'Submit' button once you are done!</h2>
+
+    <textarea ng-model='textRequestDescription' maxlength="200" id="request-text" class="form-control native-key-bindings" maxlength="50" rows="5" tabIndex=-1 placeholder="(e.g. type your request here ... () )">{{requestText}}</textarea>
+    <span>{{200 - textRequestDescription.length}} left</span>
+    <div ng-hide="COUNTDOWN" class="prompt_buttons">
+      <select ng-model="requestTags" ng-options="tag for tag in tags" multiple></select>
+      <button id='requestTextSubmittion' type='button' class='btn btn-default icon settings h3_size' ng-click='textRequestSubmittion()'>Submit (Ctrl+↵)</button>
+      <button id='cancelRecording' type='button' class='btn btn-default icon settings h3_size' ng-click='cancelPrompt()'>Cancel (Esc)</button>
+    </div>
+  </form>
+
+  <div ng-show="COUNTDOWN" class="big_countdown">
+    <span class="in_red">Recording starts in
+      {{COUNTDOWN_NUMBER}}s</span>
+  </div>
+</div>
+
+
+<!-- <h2 ng-show='TEXTMODE'>
+  You have two options to describe your request:<br><br>
+  1. Pressing "Text" button below allows you to write your request. <br><br>
+  2. Pressing "Start Recording" button below will start recording your voice and text written in the editor.
+</h2> -->
+<!-- <button id='textRecording' ng-show='TEXTMODE' type='button' class='btn btn-default icon settings h3_size' ng-click='textRecording()'>Text</button> -->
+<!-- <button id='startRecording' ng-show='TEXTMODE' type='button' class='btn btn-default icon icon-primitive-dot settings h3_size' ng-click='startRecording()'>Start Recording</button> -->

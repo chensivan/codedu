@@ -1,0 +1,27 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle Codeon'
+      'command': 'atom-codeon:toggle-recording'
+    }
+  ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Codeon'
+      'submenu': [
+        {
+          'label': 'Ask for help'
+          'command': 'atom-codeon:toggle-recording'
+        },
+        {
+          'label': 'Show Response Panel'
+          'command': 'atom-codeon:toggle-response-panel'
+        }
+      ]
+    ]
+  }
+]
