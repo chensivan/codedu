@@ -1,7 +1,7 @@
 {
   "name": "atom-codeon",
   "main": "./lib/codeon",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A help request platform",
   "keywords": [],
   "repository": "https://github.com/chensivan/codedu",
