@@ -1,7 +1,7 @@
 {
   "name": "atom-codeon",
   "main": "./lib/codeon",
-  "version": "0.1.5",
+  "version": "0.1.3",
   "description": "A help request platform",
   "keywords": [],
   "repository": "https://github.com/chensivan/codedu",
@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "1.5.5",
     "angular-aria": "1.5.0",
+    "angular-animate": "^1.4.8",
     "angular-moment": "latest",
     "angular-material": "^1.1.3",
     "angular-route": "1.5.5",
