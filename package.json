@@ -1,7 +1,7 @@
 {
   "name": "atom-codeon",
   "main": "./lib/codeon",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A help request platform",
   "keywords": [],
   "repository": "https://github.com/cromaLab/atom-codeon",
