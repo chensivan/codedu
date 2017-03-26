@@ -52,6 +52,30 @@ body{
 .tooltip_icon:hover .tooltiptext {
     visibility: visible;
 }
+
+.tooltip_icon .tooltiptext_top {
+  bottom: 32px;
+  // left: 105%;
+  visibility: hidden;
+  width: 170px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 9999;
+}
+.tooltip_icon:hover .tooltiptext_top {
+  visibility: visible;
+}
+
+
+
+
+
 .tooltipCover {
   display: inline-block;
   position: relative;
@@ -663,7 +687,7 @@ label{
   border:solid 3px #333;
     padding: 5px;
     z-index: 999;
-    width: 150px;
+    width: 250px;
 }
 
 

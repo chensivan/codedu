@@ -113,9 +113,7 @@
                <div>
                   <h4> Answer
                      <div class="tooltip_icon" style='font: bold;'>Info
-                       <p class='tooltiptext' style='white-space:pre-line'>Teacher's code is on the right column with comments in yellow. (You may close helper code w/o saving it).
-
-                         Code difference between yours and helpers is on the right column. Addition in green and deletion in red. (You may close helper code w/o saving it)
+                       <p class='tooltiptext' style='white-space:pre-line'>Click the highlighted text in the explanation below to see the associated code context.
                        </p>
                      </div>
 
@@ -173,13 +171,23 @@
                               </span>
  -->
                               <div class="showdiff-box">
+                                <div class="tooltip_icon" style='font: bold;'>GSI's Pure Answer
+                                  <p class='tooltiptext_top' style='white-space:pre-line'>Final code on GSI side with annotations if there are.
+                                  </p>
+                                </div>
+
+
                                 <label class="switch">
                                     <input class="showdiff-checkbox" type="checkbox" autocomplete="off">
                                     <span class="slider" ng-click = "toggleShowDiff(helper_response.answers)"> </span>
                                 </label>
 
                                 <span class="showdiff-lable">
-                                Show Diff
+                                  <div class="tooltip_icon" style='font: bold;'>Show Diff
+                                    <p class='tooltiptext_top' style='white-space:pre-line'>Code difference between yours and GSI's without annotation. Green is added, red is deleted by GSI.
+                                    </p>
+                                  </div>
+
                                 </span>
 
                               </div>
