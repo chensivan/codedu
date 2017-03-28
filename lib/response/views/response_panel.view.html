@@ -127,7 +127,7 @@
                   <!-- <div ng-repeat='answer in helper_response.answers track by $index'> -->
                   <!-- Show explanation content -->
                   <div class='response-content'>
-                     <div ng-repeat = "request in requests" ng-show = "selectedObj.question_id == request.question_id" id="editor-container-{{request.question_id}}" class='editor-container inset-panel panel-bottom run-command native-key-bindings' tabindex= '-1' readonly >
+                     <div ng-repeat = "request in requests" style="height: 200px; width: 200px" ng-show = "selectedObj.question_id == request.question_id" id="editor-container-{{request.question_id}}" class='editor-container inset-panel panel-bottom run-command native-key-bindings' tabindex= '-1' readonly >
                        {{request.question_id}}
                        hell-{{outerIndex}}
                       </div>
